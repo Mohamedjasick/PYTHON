@@ -19,3 +19,7 @@ def digit_prime(n):
             return False
         n=n//10
     return True
+    
+for i in range(100,1000):
+    if(prime(i) and prime(sod(i))and digit_prime(i)):
+        print(i)
