@@ -1,0 +1,26 @@
+class employe:
+    com = "COGNIZANT"
+    
+    def __init__(self, name, age, salary): 
+        self.name = name
+        self.age = age
+        self.salary = salary
+        self.tax = 0.1 * salary 
+        self.per = 0.2 * salary   
+        
+    def display(self):
+        print("name:", self.name)
+        print("age:", self.age)
+        print("company:", employe.com)
+        print("tax:", self.tax)
+        print("salary:", self.salary)
+        print("per:", self.per)
+
+
+s1 = employe("jack", 20, 30000)
+s2 = employe("suman", 21, 25000)
+s3 = employe("rahul", 31, 49000)
+
+s1.display()
+s2.display()
+s3.display()
