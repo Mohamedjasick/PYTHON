@@ -1,0 +1,8 @@
+def fib_gen(n):
+    a,b=0,1
+    for i in range(n):
+        yield a 
+        a,b =b,a+b
+
+for num in fib_gen(50):
+    print(num)
